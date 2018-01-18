@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Proyecto0</title>
+    <title>Proyecto_0</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -20,9 +20,9 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
 
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
-      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      <a class="nav-item nav-link" href="#">opcion 1</a>
+      <a class="nav-item nav-link" href="#">opcion 2</a>
+      <a class="nav-item nav-link disabled" href="#">Desavilitado</a>
   </div>
 
   </div>
@@ -42,8 +42,14 @@
 
 
 </nav>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+    <div id="notice_wrapper">
+      <% if notice %>
+         <p class="notice"><%= notice %></p>
+      <% elsif alert %>  
+         <p class="alert"><%= alert %></p>
+      <% end %>   
+    </div>
+       
        
     <%= yield %>
   </body>
