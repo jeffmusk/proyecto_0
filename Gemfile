@@ -35,6 +35,9 @@ gem 'omniauth-facebook'
 #erro ssl
 gem 'certified'
 
+#login_facebook
+gem 'omniauth-facebook'
+
 
 
 # Use CoffeeScript for .coffee assets and views
